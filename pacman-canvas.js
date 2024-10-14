@@ -175,7 +175,7 @@ function geronimo() {
 			$(h).html("Lvl: " + this.level);
 		};
 		this.canvas = $("#myCanvas").get(0);
-		this.wallColor = "Blue";
+		this.wallColor = "white";
 		this.width = this.canvas.width;
 		this.height = this.canvas.height;
 
@@ -327,34 +327,34 @@ function geronimo() {
 		this.getLevelTitle = function () {
 			switch (this.level) {
 				case 2:
-					return '"The chase begins"';
+					return '"Bem-vindo! Esse é o Pacman Ciência no Parque - UFERSA"';
 					// activate chase / scatter switching
 				case 3:
-					return '"Inky\s awakening"';
+					return '"Curiosidade: O primeiro computador eletrônico digital foi o ENIAC, que pesava 27 toneladas e ocupava 167 m²."';
 					// Inky starts leaving the ghost house
 				case 4:
-					return '"Clyde\s awakening"';
+					return '" Curiosidade: A Terra não é uma esfera perfeita; devido à rotação, ela é ligeiramente achatada nos polos e alargada no equador."';
 					// Clyde starts leaving the ghost house
 				case 5:
-					return '"need for speed"';
+					return '"Curiosidade: O conceito de algoritmo vem do matemático persa Al-Khwarizmi, que escreveu um dos primeiros tratados sobre a resolução sistemática de equações."';
 					// All the ghosts get faster from now on
 				case 6:
-					return '"hunting season 1"';
-					// TODO: No scatter mood this time
+					return '"Curiosidade: Um dia em Vênus é mais longo que um ano em Vênus. O planeta gira tão lentamente que leva cerca de 243 dias terrestres para completar uma rotação."';
+					// No scatter mode this time
 				case 7:
-					return '"the big calm"';
-					// TODO: Only scatter mood this time
+					return '"Curiosidade: O conceito de zero foi introduzido na matemática pelos indianos por volta do século 5, uma das maiores revoluções da ciência."';
+					// Only scatter mode this time
 				case 8:
-					return '"hunting season 2"';
-					// TODO: No scatter mood and all ghosts leave instantly
+					return '"Curiosidade: O telescópio Hubble pode ver cerca de 13 bilhões de anos-luz de distância, permitindo que observemos o universo em suas fases iniciais."';
+					// No scatter mode and all ghosts leave instantly
 				case 9:
-					return '"ghosts on speed"';
-					// TODO: Ghosts get even faster for this level
+					return '"Curiosidade: O número pi é infinito, e não repete nenhum padrão. O recorde mundial de cálculo de dígitos de pi chegou a mais de 31 trilhões de casas decimais."';
+					// Ghosts get even faster for this level
 				case FINAL_LEVEL:
-					return '"The final chase"';
-					// TODO: Ghosts get even faster for this level
+					return '"Como disse Albert Einstein, \"A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original.\" Continue avançando!"';
+					// Ghosts get even faster for this level
 				default:
-					return '"nothing new"';
+					return '"Curiosidade: O número áureo, ou proporção áurea, é encontrado em várias formas na natureza e arte, criando padrões que os humanos acham esteticamente agradáveis."';
 			}
 		}
 
@@ -535,8 +535,8 @@ function geronimo() {
 
 		/* ------------ Start Pre-Build Walls  ------------ */
 		this.buildWalls = function () {
-			if (this.ghostMode === 0) game.wallColor = "Blue";
-			else game.wallColor = "Red";
+			if (this.ghostMode === 0) game.wallColor = "#52b181";
+			else game.wallColor = "white";
 			canvas_walls = document.createElement('canvas');
 			canvas_walls.width = game.canvas.width;
 			canvas_walls.height = game.canvas.height;

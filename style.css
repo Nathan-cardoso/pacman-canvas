@@ -34,17 +34,16 @@ h3 {    font-size: 1.5em; }
 	
 
 html, body {
-	width:100%;
-	font-family: 'Quando', serif;
-	font-size: 14px;
+    font-family: 'Roboto', serif;
+    font-size: 14px;
     margin: 0;
     padding: 0;
     min-height: 100%;
     height: 100%;
-	line-height: 23px;
-	background: url('img/bg-pattern-black.png') repeat;
+    line-height: 23px;
     text-align: center;
-	}
+}
+
 body {
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -65,7 +64,7 @@ aside > * { margin: 0 15px; padding: 15px 0; }
 	display: inline-block;
 	width: 320px;
 	float: left;
-	background: url(bg-pattern-green.png) repeat;
+	background: url(img/logo-cp.png) repeat;
 	height: 100%;
 	position: fixed;
 	left: 0;
@@ -497,3 +496,50 @@ ul.nav li:hover, ul.nav.sub li:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
+footer {
+    background-color: black; /* Cor de fundo do footer */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centralizar o texto */
+}
+
+.header-content {
+    display: flex; /* Usar Flexbox para alinhar itens */
+    flex-direction: column; /* Colocar itens em coluna */
+    align-items: center; /* Centralizar itens horizontalmente */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+}
+
+.footer-logo {
+    max-width: 100px; /* Limitar a largura do logo */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.footer-title {
+    font-size: 18px; /* Tamanho da fonte do título */
+    margin: 0; /* Remover margem do título */
+    color: white; /* Cor do título */
+}
+
+.contact-info {
+    font-size: 14px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+}
+
+.contact-details {
+    display: flex; /* Usar Flexbox para alinhar itens */
+    justify-content: center; /* Centralizar itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.contact-info a {
+    color: #146e6b; /* Cor dos links */
+    text-decoration: none; /* Remover o sublinhado */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+
+
