@@ -339,7 +339,7 @@ function geronimo() {
 					return '"Curiosidade: O conceito de algoritmo vem do matemático persa Al-Khwarizmi, que escreveu um dos primeiros tratados sobre a resolução sistemática de equações."';
 					// All the ghosts get faster from now on
 				case 6:
-					return '"Curiosidade: Um dia em Vênus é mais longo que um ano em Vênus. O planeta gira tão lentamente que leva cerca de 243 dias terrestres para completar uma rotação."';
+					return '"Curiosidade: Ada Lovelace, foi uma matemática e escritora inglesa. Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo para ser processado por uma máquina."';
 					// No scatter mode this time
 				case 7:
 					return '"Curiosidade: O conceito de zero foi introduzido na matemática pelos indianos por volta do século 5, uma das maiores revoluções da ciência."';
